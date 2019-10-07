@@ -13,3 +13,5 @@ we use the following command:
 
 1. For zst files:
 `python deal_with_zst.py URL`
+2. for bz2 files:
+`python deal_with_bz2.py URL`

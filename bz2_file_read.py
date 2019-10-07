@@ -5,7 +5,7 @@ import bz2
 
 def bz2_file_read(scrapped_data, filename):
     print('starting to read file: ' + filename)
-    iteration = 1
+    #iteration = 1
     with bz2.open(os.path.join('.', 'compressed data', filename), 'rb') as fh:
         while True:
             chunk = fh.read(2**25)
@@ -25,6 +25,6 @@ def bz2_file_read(scrapped_data, filename):
                     pass
                 #print('iteration number: ' + str(i))
             previous_line = lines[-1]
-            print("iteration: " + str(iteration))
-            iteration += 1
+            # print("iteration: " + str(iteration))
+            # iteration += 1
     print('done reading!')
