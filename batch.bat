@@ -1,0 +1,11 @@
+python .\deal_with_bz2.py https://files.pushshift.io/reddit/submissions/RS_2017-01.bz2
+python .\deal_with_bz2.py https://files.pushshift.io/reddit/submissions/RS_2017-02.bz2
+python .\deal_with_bz2.py https://files.pushshift.io/reddit/submissions/RS_2017-03.bz2
+python .\deal_with_bz2.py https://files.pushshift.io/reddit/submissions/RS_2017-04.bz2
+python .\deal_with_bz2.py https://files.pushshift.io/reddit/submissions/RS_2017-05.bz2
+python .\deal_with_bz2.py https://files.pushshift.io/reddit/submissions/RS_2017-06.bz2
+python .\deal_with_bz2.py https://files.pushshift.io/reddit/submissions/RS_2017-07.bz2
+python .\deal_with_bz2.py https://files.pushshift.io/reddit/submissions/RS_2017-08.bz2
+python .\deal_with_bz2.py https://files.pushshift.io/reddit/submissions/RS_2017-09.bz2
+python .\deal_with_bz2.py https://files.pushshift.io/reddit/submissions/RS_2017-10.bz2
+python .\deal_with_bz2.py https://files.pushshift.io/reddit/submissions/RS_2017-11.zst

@@ -4,6 +4,9 @@ This is to automate the process of collecting data for:
 
 So far, there are 3 types of compressed files that can be found in the pushshift website.
 3 types of those files are dealt with eventually.
+1. zst
+2. bz2
+3. xz
 
 For now, to download any specific type of compressed file, 
 we use the following command:
