@@ -11,6 +11,8 @@ scrapped_data = []
 
 link = sys.argv[1]
 filename = link[-14:]
+if not filename[-3:] == 'zst' or filename[-3:] == 'bz2':
+    filename = link[-13:]
 download_files(link, filename)
 
 if filename[-3:] == 'zst':
@@ -21,7 +23,6 @@ elif filename[-3:] == 'bz2':
     deal_with_bz2(scrapped_data, filename)
 else:
     #Deal with xz 
-    filename = link[-13:]
     deal_with_xz(scrapped_data, filename)
     
 #Delete the downloaded file
