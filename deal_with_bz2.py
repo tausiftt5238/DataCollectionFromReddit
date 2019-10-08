@@ -1,7 +1,7 @@
 from bz2_file_read import bz2_file_read
-from zst_file_write import zst_file_write
+from file_write import file_write
 
 def deal_with_bz2(scrapped_data, filename):
     bz2_file_read(scrapped_data, filename)
     #It works for extensions that have length of 3, so it's fine
-    zst_file_write(scrapped_data, filename)
+    file_write(scrapped_data, filename)

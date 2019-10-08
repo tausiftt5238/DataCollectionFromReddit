@@ -3,11 +3,15 @@ import sys
 import io 
 import json
 
-def zst_file_write(scrapped_data, filename):
+def file_write(scrapped_data, filename):
     print('initiating writing of scrapped data to file: ' + filename)
+    if filename[-2:] == 'xz':
+        ext = 3
+    else:
+        ext = 4
     with open(os.path.join('.','data for speedrun subreddit',
-        filename[:-4] + '_speedrun.json',), 'w') as outfile:
+        filename[:-ext] + '_speedrun.json',), 'w') as outfile:
         json.dump(scrapped_data, outfile)
-        print("done with: " + filename[:-4])
+        print("done with: " + filename[:-ext])
         outfile.close()
     print('write complete!')
