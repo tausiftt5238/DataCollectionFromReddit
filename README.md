@@ -12,6 +12,8 @@ For now, to download any specific type of compressed file,
 we use the following command:
 
 1. For zst files:
-`python deal_with_zst.py URL`
+`python deal_with_zst.py pushshift_URL SUBREDDIT`
 2. for bz2 files:
-`python deal_with_bz2.py URL`
+`python deal_with_bz2.py pushshift_URL SUBREDDIT`
+3. for xz files:
+`python deal_with_xz.py pushshift_URL SUBREDDIT`

@@ -1,1 +1,2 @@
-python .\collect_data.py https://files.pushshift.io/reddit/submissions/RS_2017-12.xz
+python .\collect_data.py https://files.pushshift.io/reddit/comments/RC_2018-11.zst speedrun
+python .\collect_data.py https://files.pushshift.io/reddit/comments/RC_2018-12.zst speedrun

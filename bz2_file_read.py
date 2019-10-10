@@ -3,7 +3,7 @@ import json
 import os 
 import bz2
 
-def bz2_file_read(scrapped_data, filename):
+def bz2_file_read(scrapped_data, filename, subreddit):
     print('starting to read file: ' + filename)
     #iteration = 1
     with bz2.open(os.path.join('.', 'compressed data', filename), 'rb') as fh:
@@ -20,7 +20,7 @@ def bz2_file_read(scrapped_data, filename):
                     line = previous_line + line 
                 try:
                     object = json.loads(line)
-                    scrap_subreddit(scrapped_data, 'speedrun', object)
+                    scrap_subreddit(scrapped_data, subreddit, object)
                 except Exception:
                     pass
                 #print('iteration number: ' + str(i))

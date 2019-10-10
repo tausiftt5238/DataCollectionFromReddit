@@ -3,7 +3,7 @@ import zstandard as zstd
 import json
 import os 
 
-def zst_file_read(scrapped_data, filename):
+def zst_file_read(scrapped_data, filename, subreddit):
     print('starting to read file: ' + filename)
     with open(os.path.join('.', 'compressed data', filename), 'rb') as fh:
         dctx = zstd.ZstdDecompressor()
@@ -21,7 +21,7 @@ def zst_file_read(scrapped_data, filename):
                         line = previous_line + line
                     try:
                         object = json.loads(line)
-                        scrap_subreddit(scrapped_data, 'speedrun', object)
+                        scrap_subreddit(scrapped_data, subreddit, object)
                     except Exception:
                         pass
                 previous_line = lines[-1]
