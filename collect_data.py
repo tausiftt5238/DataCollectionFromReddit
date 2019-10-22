@@ -12,10 +12,11 @@ scrapped_data = []
 link = sys.argv[1]
 subreddit = sys.argv[2]
 filename = link[-14:]
-if not filename[-3:] == 'zst' or filename[-3:] == 'bz2':
+if not (filename[-3:] == 'zst' or filename[-3:] == 'bz2'):
     filename = link[-13:]
 download_files(link, filename)
-
+print("LINK: " + link)
+print("FILE NAME: " + filename)
 if filename[-3:] == 'zst':
     #Deal with zst
     deal_with_zst(scrapped_data, filename, subreddit)
